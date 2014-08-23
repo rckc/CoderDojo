@@ -1,0 +1,35 @@
+# Author: Robert Cheung
+# Date: 29 March 2014
+# License: CC BY-SA
+# For CoderDojo WA
+
+# Python Intro Turtle Graphics
+
+# Python has a rich "library" of functions.
+# We are going to use "turtle" to do some simple graphics.
+import turtle
+
+if __name__ == "__main__":
+    # Setup our drawning surface
+    turtle.setup(320,240)     # Sets up the size of the window
+    turtle.Screen()           # Turns on the graphics window
+
+    width = 20                # Create a variable called "width"
+                              # and make it equal to 10
+                              
+    # In programming, computer follows instructions
+    # A "sequence" of instructions is the most basic construct
+    # It is simply a list of instructions
+    turtle.forward(width)     # Step 1: Move forward 20 steps
+    turtle.right(90)          # Step 2: Turn right 90 degrees  
+    turtle.forward(width)     # Step 3: Move forward 20 steps
+    turtle.right(90)          #  ... and so on
+    turtle.forward(width)     
+    turtle.right(90)
+    turtle.forward(width)     
+    turtle.right(90)
+
+    ret = raw_input("Press enter to exit.")
+    turtle.Screen().bye()     # Turn off the graphics window
+
+# Library reference: http://docs.python.org/2/library/turtle.html
