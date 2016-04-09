@@ -8,7 +8,7 @@
 
 # The start of the program
 if __name__ == "__main__":
-    print "Hello Code Ninja!"
-    ret = raw_input("Press enter to exit.")
+    print("Hello Code Ninja!")
+    ret = input("Press enter to exit.")
 
 

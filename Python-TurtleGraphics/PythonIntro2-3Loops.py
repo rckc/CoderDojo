@@ -6,29 +6,32 @@
 # Python Intro Turtle Graphics
 
 import turtle
+# see https://docs.python.org/2/library/turtle.html#filling
 
 # drawSquare version 1, using the "for" loop construct
 def drawSquare(width=20):
-    print "In drawSquare(", width, ")"
+    print("In drawSquare(", width, ")")
     for i in range(4):
-        print i
+        print(i)
         turtle.forward(width)
         turtle.right(90)          
 
 # drawSquare version 2, using the "while" loop construct
 def drawSquare2(width=20):
-    print "In drawSquare2(", width, ")"
+    print("In drawSquare2(", width, ")")
     i=0
     while i<4:
-        print i
+        print(i)
         turtle.forward(width)
         turtle.right(90)          
         i += 1
 
 if __name__ == "__main__":
     # Setup our drawning surface
-    turtle.setup(320,240)     # Sets up the size of the window
+    turtle.setup(800,600)     # Sets up the size of the window
     turtle.Screen()           # Turns on the graphics window
+    # Set how fast we want the turtle to draw
+    turtle.speed(6);          # 0 (fastest) .. 10 (slowest)
 
     width = 20                # Create a variable called "width"
                               # and make it equal to 10
@@ -46,7 +49,7 @@ if __name__ == "__main__":
     drawSquare()              
                               
 
-    ret = raw_input("Press enter to exit.")
+    ret = input("Press enter to exit.")
     turtle.Screen().bye()     # Turn off the graphics window
 
 # Library reference: http://docs.python.org/2/library/turtle.html

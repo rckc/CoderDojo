@@ -8,11 +8,15 @@
 # Python has a rich "library" of functions.
 # We are going to use "turtle" to do some simple graphics.
 import turtle
+# see https://docs.python.org/2/library/turtle.html#filling
 
 if __name__ == "__main__":
     # Setup our drawning surface
-    turtle.setup(320,240)     # Sets up the size of the window
+    turtle.setup(800,600)     # Sets up the size of the window
     turtle.Screen()           # Turns on the graphics window
+
+    # Set how fast we want the turtle to draw
+    turtle.speed(6);          # 0 (fastest) .. 10 (slowest)
 
     width = 10                # Create a variable called "width"
                               # and make it equal to 10
@@ -28,7 +32,7 @@ if __name__ == "__main__":
     turtle.forward(width)
     turtle.right(90)
 
-    ret = raw_input("Press enter to exit.")
+    ret = input("Press enter to exit.")
     turtle.Screen().bye()     # Turn off the graphics window
 
 # Library reference: http://docs.python.org/2/library/turtle.html

@@ -4,18 +4,19 @@
 # For CoderDojo WA
 
 import turtle
+# see https://docs.python.org/2/library/turtle.html#filling
 
 def intro():
-    print "Welcome to CoderDojo WA Python/Turtle graphics demo v0.1"
-    print "Author: Robert Cheung"
+    print("Welcome to CoderDojo WA Python/Turtle graphics demo v0.1")
+    print("Author: Robert Cheung")
 
 def cleanup():
     # Close the screen
     turtle.Screen().bye()
 
 def printOptions():
-    print "s = Square"
-    print "q = quit"
+    print("s = Square")
+    print("q = quit")
 
 def square(length=10):
     turtle.pendown()
@@ -35,13 +36,13 @@ if __name__ == "__main__":
     _quit = False
     while not _quit:
         printOptions()
-        ret = raw_input("command?")
+        ret = input("command?")
 
         if ret == "s":
             square()
         if ret == "q":
             _quit = True
 
-    ret = raw_input("Press enter to exit.")
+    ret = input("Press enter to exit.")
     cleanup()
 
